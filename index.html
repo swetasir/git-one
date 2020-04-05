@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sweta-nginx-pod
+  labels:
+    environment: production
+    app: nginx
+spec:
+  containers:
+   - name: sweta-nginx-container
+     image: nginx:1.17.8
+     ports:
+      - containerPort: 80
